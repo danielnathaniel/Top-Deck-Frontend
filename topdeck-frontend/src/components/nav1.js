@@ -1,4 +1,4 @@
-//Nav for View-My-Decks page -AF
+//This is imported in view-my-decks.js -AF
 const Nav1 = () => {
     return (
         <nav className='nav1'>
