@@ -1,7 +1,9 @@
+//This is imported in view-my-decks.js -AF
+
 //imports
 import React, {Component} from 'react'
 
-//This is imported in view-my-decks.js -AF
+
 class Decks extends Component {
     render(){
     return (
