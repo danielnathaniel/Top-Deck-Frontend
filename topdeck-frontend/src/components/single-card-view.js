@@ -2,7 +2,7 @@
 import React, {Component} from 'react'
 
 
-class CardView extends Component {
+class Card extends Component {
   render() {
     return (
       <div className='CardView'>
@@ -13,4 +13,4 @@ class CardView extends Component {
   }
 }
 
-export default CardView;
+export default Card;
