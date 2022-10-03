@@ -13,15 +13,14 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Landing />}>
-          <Route path="deck-lists" element={<DeckLists />} />
-          <Route path="view-single-deck" element={<ViewSingleDeck />} />
-          <Route path="create-deck" element={<CreateDeck />} />
-          <Route path="view-all-cards" element={<ViewAllCards />} />
-          <Route path="update-deck-name" element={<UpdateDeckName />} />
-          <Route path="view-card" element={<ViewCard />} />
-          <Route path="add-card" element={<AddCard />} />
-        </Route>
+        <Route exact path="/" element={<Landing />} />
+        <Route path="/deck-lists" element={<DeckLists />} />
+        <Route path="/view-single-deck" element={<ViewSingleDeck />} />
+        <Route path="/create-deck" element={<CreateDeck />} />
+        <Route path="/view-all-cards" element={<ViewAllCards />} />
+        <Route path="/update-deck-name" element={<UpdateDeckName />} />
+        <Route path="/view-card" element={<ViewCard />} />
+        <Route path="/add-card" element={<AddCard />} />
       </Routes>
     </BrowserRouter>
   )
