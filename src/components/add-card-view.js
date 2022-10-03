@@ -1,6 +1,6 @@
 // this will be imported to add-card.js as the
 import React, {Component} from 'react'
-import Add from './components/add-card-btn'
+// import Add from './add-card-btn'
 
 
 class AddCards extends Component {
@@ -12,7 +12,7 @@ class AddCards extends Component {
         </div>
 
         <div className='DeckName'>
-          /* function to include deck name */
+           {/* function to include deck name  */}
         </div>
       </>
     )

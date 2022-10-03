@@ -1,5 +1,5 @@
 
-import React, {Component from 'react'}
+import React, {Component} from 'react'
 import './index.css'
 import Nav3 from './components/nav3'
 import AllCards from './components/all-cards'

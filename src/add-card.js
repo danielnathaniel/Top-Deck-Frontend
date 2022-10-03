@@ -15,3 +15,5 @@ class AddCardToDeck extends Component {
     )
   }
 }
+
+export default AddCardToDeck
