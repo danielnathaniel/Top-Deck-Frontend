@@ -1,24 +1,28 @@
-//imports
-import React, {Component} from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Landing from './landing.js';
+import DeckLists from './components/deck-list';
+import ViewSingleDeck from './view-single-deck';
+import CreateDeck from './create-a-deck-pg';
+import ViewAllCards from './cards-page';
+import UpdateDeckName from './update-deck-name-pg';
+import ViewCard from './card-view';
+import AddCard from './add-card';
 import './App.css';
-// import Landing from './landing'
-// import List from './view-my-decks';
-import Deck from './view-single-deck';
-import UpdatePg from './update-deck-name-pg';
-import CreatePg from './create-a-deck-pg';
-//refactor App to be a Class based component since we'll likely need state- AF
-class App extends Component {
-  render(){
-  return (
-    <div className='App'>
-      {/* <Landing /> */}
-     {/* <List /> */}
-     {/* <Deck /> */}
-     {/* <UpdatePg /> */}
-     <CreatePg />
-    </div>
-  );
-}
-}
 
-export default App;
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Landing />} />
+        <Route path="/deck-lists" element={<DeckLists />} />
+        <Route path="/view-single-deck" element={<ViewSingleDeck />} />
+        <Route path="/create-deck" element={<CreateDeck />} />
+        <Route path="/view-all-cards" element={<ViewAllCards />} />
+        <Route path="/update-deck-name" element={<UpdateDeckName />} />
+        <Route path="/view-card" element={<ViewCard />} />
+        <Route path="/add-card" element={<AddCard />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
+export default App
