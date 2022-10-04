@@ -1,4 +1,6 @@
 //This is imported in view-my-decks.js -AF
+import { Link } from 'react-router-dom';
+
 const Nav1 = () => {
     return (
         <nav className='nav1'>
@@ -7,10 +9,9 @@ const Nav1 = () => {
 {/* Need to resize image -AF */}
                 <img className ='logo-mg'src='/images/Logo.png' alt='Top Deck Logo'/>
             </div>
-             <div className='create-a-deck-link-div'>
-{/* Need to add route or whatever we end up doing to get user to Create A Deck page/pop-out- AF*/}
-            <a href ='#'>CREATE A DECK</a>
-            </div>
+            <div>
+            <Link to='/create-deck'>CREATE A DECK</Link>
+        </div>
         
         </nav>
     )

@@ -1,15 +1,12 @@
 //This is imported in view-single-deck.js -AF
+import { Link } from 'react-router-dom';
 
-// idea is to have this go to the update form -AF
-const handleEditBtn = ()=>{
-    console.log('to update form button clicked')
-    }
 
     const UpdateDeckBtn = () => {
         return (
-            <div className='delete-btn'>
-                <button onClick={handleEditBtn}>EDIT DECK NAME</button>
-            </div>
+            <div>
+            <Link to='/update-deck-name'>EDIT DECK NAME</Link>
+        </div>
         )
     }
     

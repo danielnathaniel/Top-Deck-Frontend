@@ -1,15 +1,11 @@
 //This is imported in view-single-deck.js -AF
-
-// idea is to have this delete the card from deck list db -AF
-  const handleDelete = ()=>{
-    console.log('delete button clicked')
-    }
-
+import { Link } from 'react-router-dom';
     const Delete = () => {
         return (
-            <div className='delete-btn'>
-                <button onClick={handleDelete}>DELETE SINGLE CARD</button>
-            </div>
+            <div>
+            {/* NEED TO FIGURE OUT HOW DELETE IS GOING TO WORK. DELETE NEEDS TO APPLY TO EACH CARD -AF */}
+            <Link to='/'>DELETE SINGLE CARD</Link>
+        </div>
         )
     }
     
