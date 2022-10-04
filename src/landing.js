@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './App.css';
 import './index.css';
 
-// idea is to have handleClick direct user to view-my-decks page-AF
+
 
 
 const Landing = () => {
