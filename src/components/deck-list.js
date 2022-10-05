@@ -9,7 +9,7 @@ class DeckList extends Component {
     return (
       <div className='DeckList'>
     {/* info for single deck list needs to come from db. AF   */}
-       <h1>deck-list.js component here</h1>
+       <h1>DeckList Here</h1>
       </div>
     );
   }
