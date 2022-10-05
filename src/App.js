@@ -8,15 +8,6 @@ import ViewCard from './card-view';
 import './App.css';
 
 
-//This might need to go in env?-AF
-// let baseURL = ''
-
-// if (process.env.NODE_ENV === 'development') {
-//   baseURL = 'http://localhost:3003'
-// } else {
-//   baseURL = 'your heroku backend url here'
-// }
-// console.log('current base url:', baseURL)
 const App = () => {
   return (
     <BrowserRouter>
