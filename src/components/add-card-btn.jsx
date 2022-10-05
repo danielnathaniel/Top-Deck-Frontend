@@ -7,4 +7,4 @@ Add a new pokemon card!
 )
 
 
-export default add-card-btn
+export default AddCardBtn
