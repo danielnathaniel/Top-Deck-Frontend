@@ -7,12 +7,12 @@ import CreateForm from "./create-form"
 let baseURL = ''
 
 if (process.env.NODE_ENV === 'development') {
-  baseURL = 'http://localhost:3002'
+  baseURL = 'https://topdeck-project3.herokuapp.com/'
 } else {
-  baseURL = 'your heroku bakend url here'
+  baseURL = 'https://topdeck-project3.herokuapp.com/'
 }
 
-// baseURL = 'https://fathomless-sierra-68956.herokuapp.com'
+
 console.log('current base URL:', baseURL)
 
 class Decks extends Component {
@@ -30,7 +30,7 @@ componentDidMount(){
   this.getDeck()
 }
  getDeck = () =>{
-  fetch(baseURL + '/decks')
+  fetch(baseURL + 'decks')
   .then((res) => {
     //if successful return json
     if (res.status === 200) {
@@ -48,7 +48,7 @@ componentDidMount(){
  handleAddDeck = (deck) => {
   //copy the entire name array to a new array
   const copyName = [...this.state.name];
-  //
+  
   copyName.unshift(deck);
   this.setState({name: copyName});
 };

@@ -3,9 +3,9 @@ import React, {Component} from 'react'
 let baseURL = ''
 
 if (process.env.NODE_ENV === 'development') {
-  baseURL = 'http://localhost:3002'
+  baseURL = 'https://topdeck-project3.herokuapp.com'
 } else {
-  baseURL = 'http://localhost:3002'
+  baseURL = 'https://topdeck-project3.herokuapp.com'
 }
 
 
