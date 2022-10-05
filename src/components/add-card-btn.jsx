@@ -1,3 +1,4 @@
+
 // below is our functional component 
 const AddCardBtn = () => ( 
    <div>
@@ -6,8 +7,4 @@ Add a new pokemon card!
 )
 
 
-
-
-
-
-export default add-card-btn
+export default AddCardBtn
