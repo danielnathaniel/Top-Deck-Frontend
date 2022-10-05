@@ -2,6 +2,7 @@
 
 //imports
 import React, {Component} from 'react'
+import CreateForm from "./create-form"
 
 let baseURL = ''
 
@@ -20,7 +21,7 @@ class Decks extends Component {
   super(props)
   this.state = {
     //expect data to come back as an array? - need to just have the name
-Deck: []
+name: []
   }
 }
 
@@ -40,16 +41,26 @@ componentDidMount(){
    })
    .then((data) => {
     console.log(data);
-    this.setState({ decks: data.decks });
+    this.setState({ deck: data.decks });
    });
  }
+
+ handleAddDeck = (deck) => {
+  //copy the entire name array to a new array
+  const copyName = [...this.state.name];
+  //
+  copyName.unshift(deck);
+  this.setState({name: copyName});
+};
+
+   
   render(){
   return (
     <div className='DeckList'>
-  {/* info for single deck list needs to come from db- data comes from create-form. AF   */}
+ <CreateForm  handleAddDeck={this.handleAddDeck}/>
   <table>
 <tbody>
-  {/* { this.state.deck.map(deck=> {
+  { this.state.name.map(deck=> {
       return (
         <tr key={deck._id} >
           <td> {deck.name }</td>
@@ -57,7 +68,7 @@ componentDidMount(){
       )
     })
 
-  } */}
+  }
 </tbody>
 </table>
     </div>
