@@ -33,10 +33,10 @@ class Cards extends Component {
     this.setState({
       searchURL: this.state.baseURL + this.state.pokeName
     }, () => {
-      pokemon.card.where({ q: 'name:pikachu' })
-.then(result => {
-    console.log(result.data) // "Blastoise"
-})
+      pokemon.card.where({ q: 'name:pikachu', pageSize: 5, page: 1 })
+      .then(result => {
+        console.log(result.data[0].name)
+      })
 
     })
   }
