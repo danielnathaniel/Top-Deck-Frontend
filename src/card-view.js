@@ -13,7 +13,8 @@ class PokeView extends Component {
 
         <Card />
         <div>
-          <a href='#'>Add Card</a> /* potential to add function to control how many you add */
+        There are words here to appease REACT
+          {/* <a href='#'>Add Card</a> /* potential to add function to control how many you add */}
         </div>
       </>
     )
