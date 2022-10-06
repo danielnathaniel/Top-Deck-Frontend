@@ -28,7 +28,7 @@ class Deck extends Component {
 
 <Delete onClick={
     ()=>
-      this.handleClick("cardId") 
+      this.handleClick(cardId) 
       // take off the quotes on cardId above
     
     } /> 

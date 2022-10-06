@@ -5,6 +5,7 @@ import ViewSingleDeck from './view-single-deck';
 import Cards from './cards-page';
 import UpdatePg from './update-deck-name-pg'
 import ViewCard from './card-view';
+//import Delete from './components/delete-card';
 import './App.css';
 
 

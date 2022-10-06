@@ -7,13 +7,13 @@ import { Link } from 'react-router-dom';
 let baseURL = ''
 
 if (process.env.NODE_ENV === 'development') {
-  baseURL = 'http://localhost:3002/'
+  baseURL = 'https://topdeck-project3.herokuapp.com'
 } else {
-  baseURL = 'https://topdeck-project3.herokuapp.com/'
+  baseURL = 'https://topdeck-project3.herokuapp.com'
 }
 
 
-console.log('current base URL:', baseURL)
+console.log('current base URL is ', baseURL)
 
 class Decks extends Component {
     //add state
