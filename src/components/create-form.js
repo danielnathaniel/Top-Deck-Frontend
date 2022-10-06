@@ -6,7 +6,7 @@ if (process.env.NODE_ENV === 'development') {
   // baseURL = 'http://localhost:3002'
   baseURL = 'https://topdeck-project3.herokuapp.com'
 } else {
-  baseURL = 'https://topdeck-project3.herokuapp.com/'
+  baseURL = 'https://topdeck-project3.app.com'
 }
 
 

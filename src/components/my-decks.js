@@ -7,9 +7,9 @@ import { Link } from 'react-router-dom';
 let baseURL = ''
 
 if (process.env.NODE_ENV === 'development') {
-  baseURL = 'https://topdeck-project3.herokuapp.com'
+  baseURL = 'https://topdeck-project3.herokuapp.com/'
 } else {
-  baseURL = 'https://topdeck-project3.herokuapp.com'
+  baseURL = 'https://topdeck-project3.herokuapp.com/'
 }
 
 
